@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.display-nav {
+  display: block !important;
+}
+
+.display-nav-items{
+  right: 0 !important;
+}
