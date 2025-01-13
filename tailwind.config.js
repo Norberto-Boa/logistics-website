@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero": "url(../assets/HeroBg.jpg)"
+        "hero": "url(../assets/HeroBg.jpg)",
+        "stats": "url(../assets/stats-bg.jpg)"
       },
       colors: {
         "primary": "#F20C36",
