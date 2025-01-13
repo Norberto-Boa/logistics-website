@@ -7,6 +7,13 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero": "url(../assets/HeroBg.jpg)"
+      },
+      colors: {
+        "primary": "#F20C36",
+        "secondary": "#2563EB",
+        "terciary": "#1E1717",
+        "paragraphs": "#404040",
+        "section": "#E5E7EB"
       }
     },
   },

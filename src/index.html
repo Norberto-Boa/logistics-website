@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css" type="text/css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Trans-Yavi</title>
 </head>
 <body>
@@ -69,7 +70,7 @@
     </header>
   
     <section class="w-full relative" id="hero">
-      <div class="max-w-screen-2xl mx-auto px-4 lg:px-8 items-center h-screen flex justify-center">
+      <div class="max-w-screen-2xl mx-auto px-4 lg:px-8 items-center min-h-screen flex justify-center">
         <!-- Texto-->
         <div class="sm:py-28 lg:py-32  overflow-hidden lg:ml-auto mx-auto py-8">
           <img src="./assets/distribution.svg" alt="Distribution icon" class="max-lg:mx-auto lg:ml-auto w-32">
@@ -96,9 +97,60 @@
         <div class="absolute bg-black/80 h-full w-full top-0 right-0 bg-cover -z-40 "></div>
       </div>
     </section>
+
+    <section id="about-us" class="bg-section">
+      <div class="max-w-screen-2xl mx-auto px-4 lg:px-8 items-center grid grid-cols-8 py-12 justify-between">
+        <!-- Text -->
+        <div class="w-full h-full text-center lg:text-start col-span-4">
+          <p class="text-primary leading-tight font-bold uppercase">
+            Sobre Trans-Yavi
+          </p>
+          <h2 class="text-terciary font-black text-4xl leading-tight font-roboto my-4">
+            Levamos tudo, de qualquer lugar para qualquer destino, com segurança e pontualidade.
+          </h2>
+          <p class="text-paragraphs mb-8 font-semibold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem
+             atque ratione eius nobis, in eos voluptatibus asperiores placeat quia 
+             accusamus ad ducimus magnam. Ipsam fuga odio consectetur eveniet doloremque 
+          </p>
+          <p class="text-paragraphs mb-12 font-semibold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem
+             atque ratione eius nobis, in eo voluptatibus asperiores placeat quia 
+             accusamus ad ducimus magnam. Ipsam fuga odio consectetur eveniet doloremque 
+          </p>
+
+          <div class="lg:text-start text-center mt-8 text-secondary lg:ml-auto p-1 mx-auto">
+            <a 
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="p-4 border-2 text-secondary border-secondary uppercase hover:bg-secondary transition-all hover:text-white font-semibold"
+            >
+              Ver nosso Portfolio
+            </a>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div 
+        class="col-start-6 col-end-9 w-full" 
+        data-aos="zoom-in" 
+        data-aos-duration="1500"
+        data-aos-anchor-placement="top-bottom"
+        >
+          <div class="h-full">
+            <img src="./assets/truck.png" alt="" class="lg:w-auto ">
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   
 
   <script src="./scripts/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
