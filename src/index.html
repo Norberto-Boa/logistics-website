@@ -598,6 +598,164 @@
           </div>
         </div>
       </section>
+
+      <!-- Contacts Section -->
+      <section id="contacs">
+        <div class="max-w-screen-2xl mx-auto px-4 lg:px-8 py-12 bg-section">
+          <!-- Title -->
+          <div class="w-1/2">
+            <p
+              class="text-primary leading-tight font-bold uppercase text-start sm:text-center lg:text-start"
+            >
+              Nossos Contactos
+            </p>
+            <h2
+              class="text-terciary font-black sm:text-4xl text-2xl leading-tight font-roboto sm:my-4 my-2 sm:text-center text-justify lg:text-start"
+            >
+              Encontre-nos em nossos locais ou entre em contacto conosco para
+              mais informações
+            </h2>
+          </div>
+
+          <div class="flex w-full py-12 justify-between">
+            <!-- Contacts -->
+            <div class="flex flex-col">
+              <div class="flex gap-4 items-center mb-8">
+                <img src="./assets/hq.png" alt="HeadQuarters" class="w-20" />
+                <div class="text-paragraphs font-bold">
+                  <p>Av das Industrias, Casa 768</p>
+                  <p>Sikwama, Cidade da Matola</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-center mb-8">
+                <img
+                  src="./assets/envelope.png"
+                  alt="HeadQuarters"
+                  class="w-20"
+                />
+                <div class="text-paragraphs font-bold">
+                  <p>Av das Industrias, Casa 768</p>
+                  <p>Sikwama, Cidade da Matola</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-center mb-8">
+                <img src="./assets/phone.png" alt="HeadQuarters" class="w-20" />
+                <div class="text-paragraphs font-bold">
+                  <p>Av das Industrias, Casa 768</p>
+                  <p>Sikwama, Cidade da Matola</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-center mb-8">
+                <img src="./assets/clock.png" alt="HeadQuarters" class="w-20" />
+                <div class="text-paragraphs font-bold">
+                  <p>Av das Industrias, Casa 768</p>
+                  <p>Sikwama, Cidade da Matola</p>
+                </div>
+              </div>
+            </div>
+
+            <form
+              action="#"
+              method="POST"
+              class="lg:w-fit w-full lg:px-0 sm:px-8 md:px-24 px-0"
+              id="contact-form"
+            >
+              <div
+                class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 w-full"
+              >
+                <!-- First Name -->
+                <div class="w-full">
+                  <label
+                    for="first-name"
+                    class="block text-sm font-semibold leading-6 text-secondary"
+                    >Nome Proprio</label
+                  >
+                  <div class="mt-2.5">
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="first-name"
+                      autocomplete="given-name"
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-secondary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                <!-- Last Name -->
+                <div>
+                  <label
+                    for="last-name"
+                    class="block text-sm font-semibold leading-6 text-secondary"
+                    >Apelido</label
+                  >
+                  <div class="mt-2.5">
+                    <input
+                      type="text"
+                      name="lastName"
+                      id="last-name"
+                      autocomplete="family-name"
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-secondary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="sm:col-span-2">
+                  <label
+                    for="email"
+                    class="block text-sm font-semibold leading-6 text-secondary"
+                    >Email</label
+                  >
+                  <div class="mt-2.5">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      autocomplete="email"
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-secondary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="sm:col-span-2">
+                  <label
+                    for="message"
+                    class="block text-sm font-semibold leading-6 text-secondary"
+                    >Mensagem</label
+                  >
+                  <div class="mt-2.5">
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="4"
+                      class="block w-full rounded-md border-0 px-3.5 py-2 text-secondary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="text-base hidden text-green-500 font-semibold"
+                id="successMessage"
+              >
+                Mensagem enviada com sucesso!
+              </h3>
+              <div class="mt-4">
+                <button
+                  type="submit"
+                  class="block w-full rounded-md bg-secondary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Enviar Mensagem
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Form -->
+        </div>
+      </section>
     </div>
 
     <script src="./scripts/main.js"></script>
