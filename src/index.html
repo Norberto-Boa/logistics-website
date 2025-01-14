@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,11 +8,13 @@
     <title>Trans-Yavi</title>
   </head>
 
-  <body>
+  <body class="">
     <div class="">
-      <header class="fixed inset-x-0 top-0 z-50 border-b border-b-white">
+      <header
+        class="fixed inset-x-0 top-0 z-50 border-b border-b-white bg-black/70"
+      >
         <nav
-          class="flex items-center justify-between p-6 lg:px-8 max-w-screen-2xl mx-auto"
+          class="flex items-center justify-between py-4 lg:px-8 max-w-screen-2xl mx-auto"
           aria-label="Global"
         >
           <div class="flex lg:flex-1">
@@ -46,12 +48,11 @@
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm/6 font-semibold text-white">Product</a>
-            <a href="#" class="text-sm/6 font-semibold text-white">Features</a>
-            <a href="#" class="text-sm/6 font-semibold text-white"
-              >Marketplace</a
-            >
-            <a href="#" class="text-sm/6 font-semibold text-white">Company</a>
+            <a href="#hero" class="text-sm/6 font-semibold text-white">Inicio</a>
+            <a href="#about-us" class="text-sm/6 font-semibold text-white">Sobre-nós</a>
+            <a href="#services" class="text-sm/6 font-semibold text-white">Serviços</a>
+            <a href="#portfolio" class="text-sm/6 font-semibold text-white">Portfolio</a>
+            <a href="#contacts" class="text-sm/6 font-semibold text-white">Contactos</a>
           </div>
         </nav>
 
@@ -100,24 +101,28 @@
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                   <a
-                    href="#"
+                    href="#hero"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Product</a
+                    >Inicio</a
                   >
                   <a
-                    href="#"
+                    href="#about-us"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Features</a
+                    >Sobre-nós</a
                   >
                   <a
-                    href="#"
+                    href="#services"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Marketplace</a
+                    >Serviços</a
                   >
                   <a
-                    href="#"
+                    href="#portfolio"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                    >Company</a
+                    >Portfolio</a
+                  <a
+                    href="#contacts"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Contactos</a
                   >
                 </div>
               </div>
@@ -465,6 +470,7 @@
       <!-- Portfolio Section -->
       <section
         class="max-w-screen-2xl mx-auto px-4 lg:px-8 items-center py-12 justify-between"
+        id="portfolio"
       >
         <div class="w-full">
           <p class="text-primary leading-tight font-bold uppercase text-center">
@@ -600,10 +606,10 @@
       </section>
 
       <!-- Contacts Section -->
-      <section id="contacs">
-        <div class="max-w-screen-2xl mx-auto px-4 lg:px-8 py-12 bg-section">
+      <section id="contacts">
+        <div class="max-w-screen-2xl mx-auto px-4 lg:px-20 py-12 bg-section">
           <!-- Title -->
-          <div class="w-1/2">
+          <div class="lg:w-1/2 w-full">
             <p
               class="text-primary leading-tight font-bold uppercase text-start sm:text-center lg:text-start"
             >
@@ -617,22 +623,18 @@
             </h2>
           </div>
 
-          <div class="flex w-full py-12 justify-between">
+          <div class="flex w-full py-12 justify-between flex-wrap items-center">
             <!-- Contacts -->
-            <div class="flex flex-col">
-              <div class="flex gap-4 items-center mb-8">
-                <img src="./assets/hq.png" alt="HeadQuarters" class="w-20" />
-                <div class="text-paragraphs font-bold">
-                  <p>Av das Industrias, Casa 768</p>
-                  <p>Sikwama, Cidade da Matola</p>
-                </div>
-              </div>
-
-              <div class="flex gap-4 items-center mb-8">
+            <div
+              class="lg:flex lg:flex-col grid sm:grid-cols-4 max-md:w-full max-lg:mx-auto"
+            >
+              <div
+                class="flex gap-4 items-center mb-8 sm:col-span-2 max-sm:mx-auto"
+              >
                 <img
-                  src="./assets/envelope.png"
+                  src="./assets/hq.png"
                   alt="HeadQuarters"
-                  class="w-20"
+                  class="sm:w-16 w-12"
                 />
                 <div class="text-paragraphs font-bold">
                   <p>Av das Industrias, Casa 768</p>
@@ -640,117 +642,150 @@
                 </div>
               </div>
 
-              <div class="flex gap-4 items-center mb-8">
-                <img src="./assets/phone.png" alt="HeadQuarters" class="w-20" />
+              <div
+                class="flex gap-4 items-center mb-8 sm:col-span-2 max-sm:mx-auto"
+              >
+                <img
+                  src="./assets/envelope.png"
+                  alt="HeadQuarters"
+                  class="sm:w-16 w-12"
+                />
                 <div class="text-paragraphs font-bold">
-                  <p>Av das Industrias, Casa 768</p>
-                  <p>Sikwama, Cidade da Matola</p>
+                  <p>info@transyavi.co.mz</p>
+                  <p>comercial@transyavi.co.mz</p>
                 </div>
               </div>
 
-              <div class="flex gap-4 items-center mb-8">
-                <img src="./assets/clock.png" alt="HeadQuarters" class="w-20" />
+              <div
+                class="flex gap-4 items-center mb-8 sm:col-span-2 max-sm:mx-auto"
+              >
+                <img
+                  src="./assets/phone.png"
+                  alt="HeadQuarters"
+                  class="sm:w-16 w-12"
+                />
                 <div class="text-paragraphs font-bold">
-                  <p>Av das Industrias, Casa 768</p>
-                  <p>Sikwama, Cidade da Matola</p>
+                  <p>+258 84 000 0000</p>
+                  <p>+258 86 000 0000</p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-4 items-center mb-8 sm:col-span-2 max-sm:mx-auto"
+              >
+                <img
+                  src="./assets/clock.png"
+                  alt="HeadQuarters"
+                  class="sm:w-16 w-12"
+                />
+                <div class="text-paragraphs font-bold">
+                  <p>Escritorio | 08:00 - 18:00</p>
+                  <p>Segunda à Sábado</p>
                 </div>
               </div>
             </div>
 
-            <form
-              action="#"
-              method="POST"
-              class="lg:w-fit w-full lg:px-0 sm:px-8 md:px-24 px-0"
-              id="contact-form"
+            <div
+              class="bg-white px-12 py-10 rounded shadow-lg max-lg:mx-auto max-sm:w-full"
             >
-              <div
-                class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 w-full"
+              <h2 class="text-center text-2xl font-black text-terciary py-4">
+                Diga nos o que precisa!
+              </h2>
+              <form
+                action="#"
+                method="POST"
+                class="lg:w-fit w-full lg:px-0 sm:px-8 md:px-12 px-0"
+                id="contact-form"
               >
-                <!-- First Name -->
-                <div class="w-full">
-                  <label
-                    for="first-name"
-                    class="block text-sm font-semibold leading-6 text-secondary"
-                    >Nome Proprio</label
-                  >
-                  <div class="mt-2.5">
-                    <input
-                      type="text"
-                      name="firstName"
-                      id="first-name"
-                      autocomplete="given-name"
-                      class="block w-full rounded-md border-0 px-3.5 py-2 text-secondary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <!-- Last Name -->
-                <div>
-                  <label
-                    for="last-name"
-                    class="block text-sm font-semibold leading-6 text-secondary"
-                    >Apelido</label
-                  >
-                  <div class="mt-2.5">
-                    <input
-                      type="text"
-                      name="lastName"
-                      id="last-name"
-                      autocomplete="family-name"
-                      class="block w-full rounded-md border-0 px-3.5 py-2 text-secondary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-
-                <!-- Email -->
-                <div class="sm:col-span-2">
-                  <label
-                    for="email"
-                    class="block text-sm font-semibold leading-6 text-secondary"
-                    >Email</label
-                  >
-                  <div class="mt-2.5">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      autocomplete="email"
-                      class="block w-full rounded-md border-0 px-3.5 py-2 text-secondary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-
-                <!-- Message -->
-                <div class="sm:col-span-2">
-                  <label
-                    for="message"
-                    class="block text-sm font-semibold leading-6 text-secondary"
-                    >Mensagem</label
-                  >
-                  <div class="mt-2.5">
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows="4"
-                      class="block w-full rounded-md border-0 px-3.5 py-2 text-secondary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-              <h3
-                class="text-base hidden text-green-500 font-semibold"
-                id="successMessage"
-              >
-                Mensagem enviada com sucesso!
-              </h3>
-              <div class="mt-4">
-                <button
-                  type="submit"
-                  class="block w-full rounded-md bg-secondary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                <div
+                  class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 w-full"
                 >
-                  Enviar Mensagem
-                </button>
-              </div>
-            </form>
+                  <!-- First Name -->
+                  <div class="w-full">
+                    <label
+                      for="first-name"
+                      class="block text-sm font-semibold leading-6 text-terciary"
+                      >Nome Proprio</label
+                    >
+                    <div class="mt-2.5">
+                      <input
+                        type="text"
+                        name="firstName"
+                        id="first-name"
+                        autocomplete="given-name"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-terciary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <!-- Last Name -->
+                  <div>
+                    <label
+                      for="last-name"
+                      class="block text-sm font-semibold leading-6 text-terciary"
+                      >Apelido</label
+                    >
+                    <div class="mt-2.5">
+                      <input
+                        type="text"
+                        name="lastName"
+                        id="last-name"
+                        autocomplete="family-name"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-terciary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="sm:col-span-2">
+                    <label
+                      for="email"
+                      class="block text-sm font-semibold leading-6 text-terciary"
+                      >Email</label
+                    >
+                    <div class="mt-2.5">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        autocomplete="email"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-terciary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Message -->
+                  <div class="sm:col-span-2">
+                    <label
+                      for="message"
+                      class="block text-sm font-semibold leading-6 text-terciary"
+                      >Mensagem</label
+                    >
+                    <div class="mt-2.5">
+                      <textarea
+                        name="message"
+                        id="message"
+                        rows="4"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-terciary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <h3
+                  class="text-base hidden text-green-500 font-semibold"
+                  id="successMessage"
+                >
+                  Mensagem enviada com sucesso!
+                </h3>
+                <div class="mt-4">
+                  <button
+                    type="submit"
+                    class="block w-full rounded-md bg-secondary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                    Enviar Mensagem
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
 
           <!-- Form -->
